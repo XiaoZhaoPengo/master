@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  background-color: #fafafa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 16px;
+  color: #333;
+  padding: 20px;
 }
 
 .App-logo {
@@ -35,4 +44,258 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.ant-list-item {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-list-item-meta-title {
+  color: #ff4d4f;
+}
+
+.ant-input {
+  border-radius: 20px;
+}
+
+.ant-btn-primary {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.ant-btn-primary:hover {
+  background-color: #ff7875;
+  border-color: #ff7875;
+}
+
+.travel-assistant {
+  max-width: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .travel-assistant {
+    max-width: 600px;
+  }
+}
+
+.travel-assistant-title {
+  color: #ff2442;
+  margin-bottom: 20px;
+}
+
+.message-container {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.message-list {
+  padding: 0;
+}
+
+.message-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.message-item.user {
+  justify-content: flex-end;
+}
+
+.message-item.ai {
+  justify-content: flex-start;
+}
+
+.message-content {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.user-avatar {
+  background-color: #ff2442;
+}
+
+.assistant-avatar {
+  background-color: #ff9999;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input-field {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  padding-right: 100px;
+}
+
+.input-field input {
+  border: none;
+  box-shadow: none;
+}
+
+.send-button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 15px;
+  background-color: #1890ff;
+  border-color: #1890ff;
+  height: 32px;
+  padding: 0 15px;
+}
+
+.send-button:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.send-button:active {
+  background-color: #096dd9;
+  border-color: #096dd9;
+}
+
+.ant-list-item-meta-content {
+  width: 100%;
+}
+
+.ai-response-section {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ai-response-section h3 {
+  color: #ff2442;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ff9999;
+  padding-bottom: 5px;
+}
+
+.ai-response-section h4 {
+  color: #ff6b81;
+  font-size: 1.1em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.ai-response-section p, .ai-response-section li {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.ai-response-section strong {
+  color: #ff2442;
+  font-weight: bold;
+}
+
+.ai-response-section ul, .ai-response-section ol {
+  padding-left: 20px;
+}
+
+.message-item.ai .message-content {
+  background-color: #fff5f5;
+  margin-right: 40px;
+  border-radius: 20px 20px 20px 5px;
+}
+
+.message-item.user .message-content {
+  background-color: #ff9999;
+  color: #fff;
+  margin-left: 40px;
+  border-radius: 20px 20px 5px 20px;
+}
+
+.long-loading-tip {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffe4e1;
+  border-radius: 5px;
+  color: #ff6b81;
+  font-size: 14px;
+  text-align: center;
+}
+
+.welcome-message {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff5f5;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.welcome-message h2 {
+  color: #ff2442;
+  margin-bottom: 15px;
+}
+
+.welcome-message p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.welcome-message ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.welcome-message li {
+  color: #ff6b81;
+  margin-bottom: 10px;
+}
+
+.welcome-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.message-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.message-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+  background: #ff9999;
+  border-radius: 4px;
+}
+
+.message-container::-webkit-scrollbar-thumb:hover {
+  background: #ff7875;
+}
+
+.travel-plan-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff2442;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff5f5;
+  border-radius: 10px;
 }
